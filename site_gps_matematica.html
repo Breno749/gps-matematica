@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoMath • GPS + Matemática</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            dark: '#0b1220'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-dark text-gray-200">
+
+<!-- Navbar -->
+<header class="fixed w-full top-0 bg-dark/80 backdrop-blur border-b border-gray-800 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-white">GeoMath</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="#sobre" class="hover:text-primary">Sobre</a>
+      <a href="#matematica" class="hover:text-primary">Matemática</a>
+      <a href="#aplicacoes" class="hover:text-primary">Aplicações</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="pt-32 pb-20 text-center px-6">
+  <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+    Como a Matemática localiza você no mundo
+  </h2>
+  <p class="max-w-2xl mx-auto text-gray-400 mb-8">
+    Descubra como o GPS usa equações, tempo e geometria para calcular sua posição com precisão em tempo real.
+  </p>
+  <button class="bg-primary px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition">
+    Explorar
+  </button>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="max-w-5xl mx-auto px-6 py-16">
+  <h3 class="text-2xl font-semibold mb-6 text-white">📍 O que é GPS?</h3>
+  <p class="text-gray-400 leading-relaxed">
+    O GPS é um sistema baseado em satélites que permite determinar a localização exata de um usuário em qualquer lugar do planeta. Ele está presente em celulares, carros e aplicativos de navegação.
+  </p>
+</section>
+
+<!-- Matemática -->
+<section id="matematica" class="bg-gray-900 py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-10 text-white">📐 Matemática por trás do GPS</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+        <h4 class="font-semibold text-lg mb-2">Distância</h4>
+        <p class="text-gray-400 text-sm">O GPS calcula a distância usando o tempo do sinal.</p>
+        <p class="mt-3 text-primary font-bold">d = v × t</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+        <h4 class="font-semibold text-lg mb-2">Trilateração</h4>
+        <p class="text-gray-400 text-sm">A interseção de 3 satélites define sua posição exata.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg">
+        <h4 class="font-semibold text-lg mb-2">Equações</h4>
+        <p class="text-gray-400 text-sm">Sistemas matemáticos resolvem a posição no espaço.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Aplicações -->
+<section id="aplicacoes" class="max-w-5xl mx-auto px-6 py-16">
+  <h3 class="text-2xl font-semibold mb-6 text-white">💻 Aplicações na Tecnologia</h3>
+  <ul class="space-y-3 text-gray-400">
+    <li>• Navegação e mapas digitais</li>
+    <li>• Transporte e mobilidade urbana</li>
+    <li>• Logística e rastreamento</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 text-center py-6 text-gray-500 text-sm">
+  Projeto acadêmico • Matemática Computacional Aplicada
+</footer>
+
+</body>
+</html>
